@@ -45,6 +45,7 @@ $theme.include($body_top_include)
 		</div>
 
 		<div class="login-section">
+			<a class="btn btn-primary btn-login" href="/web/guest/login"> Log In </a>
 		</div>
 	</div>
 

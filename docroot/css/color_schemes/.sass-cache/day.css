@@ -1,5 +1,6 @@
 .scrolled {
-  background-color: white !important; }
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
 
 .scrolled-text {
   color: #232122 !important; }

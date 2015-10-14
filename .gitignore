@@ -1,3 +1,4 @@
 .DS-Store
-/docroot/css/.sass-cache
-/docroot/_diffs/css/color_schemes/.sass-cache
+.sass-cache
+docroot/css/.sass-cache
+docroot/_diffs/css/color_schemes/.sass-cache

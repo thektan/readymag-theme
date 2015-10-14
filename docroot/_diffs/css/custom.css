@@ -129,13 +129,16 @@
                 text-align: right;
                 width: 15%;
                 height: 72px;
+                display: -webkit-flex;
                 display: flex;
                 justify-content: flex-end;
+                -webkit-justify-content: flex-end;
 
                 .btn-login {
                     @include border-radius(100px);
                     display: block;
                     align-self: center;
+                    -webkit-align-self: center;
                     border-width: 1px;
                     padding: 0 21px;
                     line-height: 40px;

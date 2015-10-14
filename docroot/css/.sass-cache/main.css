@@ -2569,13 +2569,23 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
   background-image: -o-linear-gradient(#f2f2f2, #cccccc);
   background-image: linear-gradient(#f2f2f2, #cccccc); }
 
+/* ------------ Scrolled Styles ------------ */
 .scrolled {
-  background-color: white !important; }
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
 
 .scrolled-text {
   color: #232122 !important; }
   .scrolled-text:hover {
     color: #2e42a4 !important; }
+
+.scrolled-button {
+  background-color: #ff4e22 !important;
+  border-color: #ff4e22 !important;
+  color: white !important; }
+  .scrolled-button:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #ff4e22 !important; }
 
 .aui {
   background-color: #232122; }
@@ -2596,13 +2606,20 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
         color: white; }
         .aui body.night .site-navigation-bar .navigation-section a:hover {
           color: #2e42a4; }
+      .aui body.night .site-navigation-bar .btn-login {
+        background-color: white;
+        border-color: white;
+        color: #232122; }
+        .aui body.night .site-navigation-bar .btn-login:hover {
+          color: white; }
     .aui body.night .portlet-login .navigation {
       background: white; }
       .aui body.night .portlet-login .navigation .taglib-text:hover {
         color: #2e42a4; }
 
 .scrolled {
-  background-color: white !important; }
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
 
 .scrolled-text {
   color: #232122 !important; }
@@ -2633,7 +2650,44 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
       .aui body.day .portlet-login .navigation .taglib-text:hover {
         color: #2e42a4; }
 
+.scrolled {
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
+
+.scrolled-text {
+  color: #232122 !important; }
+  .scrolled-text:hover {
+    color: #2e42a4 !important; }
+
 .aui {
+  background-color: #abd3e3; }
+  .aui .lfr-admin-panel {
+    color: #232122; }
+  .aui body.dawn {
+    background-color: #abd3e3;
+    color: #232122;
+    /* ------------ Navigation Bar ------------ */
+    /* ------------ Portlet - Login ------------*/ }
+    .aui body.dawn a {
+      color: #232122; }
+    .aui body.dawn h2.page-title {
+      color: white; }
+    .aui body.dawn .site-navigation-bar {
+      background-color: rgba(34, 33, 33, 0); }
+      .aui body.dawn .site-navigation-bar h1.site-title {
+        color: #232122; }
+      .aui body.dawn .site-navigation-bar .navigation-section a {
+        color: #232122; }
+        .aui body.dawn .site-navigation-bar .navigation-section a:hover {
+          color: #2e42a4; }
+    .aui body.dawn .portlet-login .navigation {
+      background: white; }
+      .aui body.dawn .portlet-login .navigation .taglib-text:hover {
+        color: #2e42a4; }
+
+.aui {
+  /* Global Styles
+  ---------------------------------------- */
   -webkit-font-smoothing: antialiased;
   /* Navigation Bar
   ---------------------------------------- */
@@ -2685,6 +2739,7 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
     border-radius: 5px;
     background-color: #2E42A4;
     background-image: none;
+    box-shadow: none;
     padding: 14px 28px;
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
@@ -2704,23 +2759,25 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999; }
+    z-index: 9999;
+    /* End site-navigation-bar */ }
     .aui .navigation-bar .site-navigation-bar {
       height: 72px;
       padding: 0 64px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
       -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
       -moz-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
       -o-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
       transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .aui .navigation-bar .site-navigation-bar .title-section {
-        float: left; }
+        float: left;
+        width: 15%; }
       .aui .navigation-bar .site-navigation-bar .navigation-section {
         float: left;
         height: 72px;
         overflow: auto;
         text-align: center;
-        width: 80%; }
+        width: 70%; }
         .aui .navigation-bar .site-navigation-bar .navigation-section nav ul {
           display: block;
           list-style-type: none;
@@ -2734,6 +2791,30 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
           font-weight: 400;
           line-height: 72px;
           text-decoration: none; }
+      .aui .navigation-bar .site-navigation-bar .login-section {
+        float: right;
+        text-align: right;
+        width: 15%;
+        height: 72px;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end; }
+        .aui .navigation-bar .site-navigation-bar .login-section .btn-login {
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          -ms-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          display: block;
+          align-self: center;
+          -webkit-align-self: center;
+          border-width: 1px;
+          padding: 0 21px;
+          line-height: 40px;
+          font-weight: 400; }
+          .aui .navigation-bar .site-navigation-bar .login-section .btn-login:hover {
+            background-color: rgba(0, 0, 0, 0); }
   .aui .portlet, .aui .portlet-borderless-container {
     background-color: #FFF;
     border-radius: 7px;

@@ -1,10 +1,20 @@
+/* ------------ Scrolled Styles ------------ */
 .scrolled {
-  background-color: white !important; }
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
 
 .scrolled-text {
   color: #232122 !important; }
   .scrolled-text:hover {
     color: #2e42a4 !important; }
+
+.scrolled-button {
+  background-color: #ff4e22 !important;
+  border-color: #ff4e22 !important;
+  color: white !important; }
+  .scrolled-button:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #ff4e22 !important; }
 
 .aui {
   background-color: #232122; }
@@ -25,6 +35,12 @@
         color: white; }
         .aui body.night .site-navigation-bar .navigation-section a:hover {
           color: #2e42a4; }
+      .aui body.night .site-navigation-bar .btn-login {
+        background-color: white;
+        border-color: white;
+        color: #232122; }
+        .aui body.night .site-navigation-bar .btn-login:hover {
+          color: white; }
     .aui body.night .portlet-login .navigation {
       background: white; }
       .aui body.night .portlet-login .navigation .taglib-text:hover {

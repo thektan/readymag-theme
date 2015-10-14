@@ -3,8 +3,10 @@ $color-light: #FFF;
 $color-accent: #2E42A4;
 $color-accent-2: #FF4E22;
 
+/* ------------ Scrolled Styles ------------ */
 .scrolled {
     background-color: $color-light !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
 }
 
 .scrolled-text {
@@ -12,6 +14,17 @@ $color-accent-2: #FF4E22;
 
     &:hover {
         color: $color-accent !important;
+    }
+}
+
+.scrolled-button {
+    background-color: $color-accent-2 !important;
+    border-color: $color-accent-2 !important;
+    color: $color-light !important;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: $color-accent-2 !important;
     }
 }
 
@@ -45,6 +58,16 @@ $color-accent-2: #FF4E22;
                     &:hover {
                         color: $color-accent;
                     }
+                }
+            }
+
+            .btn-login {
+                background-color: $color-light;
+                border-color: $color-light;
+                color: $color-dark;
+
+                &:hover {
+                    color: $color-light;
                 }
             }
         }

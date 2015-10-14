@@ -1,5 +1,6 @@
 .scrolled {
-  background-color: white !important; }
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; }
 
 .scrolled-text {
   color: #232122 !important; }
@@ -7,26 +8,28 @@
     color: #2e42a4 !important; }
 
 .aui {
-  background-color: white; }
+  background-color: #abd3e3; }
   .aui .lfr-admin-panel {
     color: #232122; }
-  .aui body.day {
-    background-color: white;
+  .aui body.dawn {
+    background-color: #abd3e3;
     color: #232122;
     /* ------------ Navigation Bar ------------ */
     /* ------------ Portlet - Login ------------*/ }
-    .aui body.day a {
+    .aui body.dawn a {
       color: #232122; }
-    .aui body.day .site-navigation-bar {
+    .aui body.dawn h2.page-title {
+      color: white; }
+    .aui body.dawn .site-navigation-bar {
       background-color: rgba(34, 33, 33, 0); }
-      .aui body.day .site-navigation-bar h1.site-title {
+      .aui body.dawn .site-navigation-bar h1.site-title {
         color: #232122; }
-      .aui body.day .site-navigation-bar .navigation-section a {
+      .aui body.dawn .site-navigation-bar .navigation-section a {
         color: #232122; }
-        .aui body.day .site-navigation-bar .navigation-section a:hover {
+        .aui body.dawn .site-navigation-bar .navigation-section a:hover {
           color: #2e42a4; }
-    .aui body.day .portlet-login .navigation {
+    .aui body.dawn .portlet-login .navigation {
       background: white; }
-      .aui body.day .portlet-login .navigation .taglib-text:hover {
+      .aui body.dawn .portlet-login .navigation .taglib-text:hover {
         color: #2e42a4; }
 
