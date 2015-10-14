@@ -1,0 +1,63 @@
+$color-dark: #232122;
+$color-light: #FFF;
+$color-accent: #2E42A4;
+$color-accent-2: #FF4E22;
+
+.scrolled {
+    background-color: $color-light !important;
+}
+
+.scrolled-text {
+    color: $color-dark !important;
+
+    &:hover {
+        color: $color-accent !important;
+    }
+}
+
+.aui {
+    background-color: $color-light;
+
+    .lfr-admin-panel {
+        color: $color-dark;
+    }
+
+    body.day {
+        background-color: $color-light;
+        color: $color-dark;
+
+        a {
+            color: $color-dark;
+        }
+
+        /* ------------ Navigation Bar ------------ */
+        .site-navigation-bar {
+            background-color: rgba(34, 33, 33, 0);
+
+            h1.site-title {
+                color: $color-dark;
+            }
+
+            .navigation-section {
+                a {
+                    color: $color-dark;
+
+                    &:hover {
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
+
+        /* ------------ Portlet - Login ------------*/
+        .portlet-login {
+            .navigation {
+                background: $color-light;
+
+                .taglib-text:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.scrolled {
+  background-color: white !important; }
+
+.scrolled-text {
+  color: #232122 !important; }
+  .scrolled-text:hover {
+    color: #2e42a4 !important; }
+
+.aui {
+  background-color: #232122; }
+  .aui .lfr-admin-panel {
+    color: #232122; }
+  .aui body.night {
+    background-color: #232122;
+    color: white;
+    /* ------------ Navigation Bar ------------ */
+    /* ------------ Portlet - Login ------------*/ }
+    .aui body.night a {
+      color: #232122; }
+    .aui body.night .site-navigation-bar {
+      background-color: rgba(34, 33, 33, 0); }
+      .aui body.night .site-navigation-bar h1.site-title {
+        color: white; }
+      .aui body.night .site-navigation-bar .navigation-section a {
+        color: white; }
+        .aui body.night .site-navigation-bar .navigation-section a:hover {
+          color: #2e42a4; }
+    .aui body.night .portlet-login .navigation {
+      background: white; }
+      .aui body.night .portlet-login .navigation .taglib-text:hover {
+        color: #2e42a4; }
+

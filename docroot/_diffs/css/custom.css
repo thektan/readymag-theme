@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
+@import url(color_schemes/night.css);
+@import url(color_schemes/day.css);
+@import "compass";
+
+.aui {
+    -webkit-font-smoothing: antialiased;
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        padding-top: 72px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 300;
+        margin: 0;
+    }
+
+    h1.site-title {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 72px;
+        margin: 0;
+    }
+
+    h2.page-title {
+        line-height: 60px;
+        font-size: 90px;
+        text-align: center;
+    }
+
+    h2.welcome-title {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    a {
+        @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+
+        &:hover {
+            @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+            text-decoration: none;
+        }
+    }
+
+    img {
+        vertical-align: initial; /* To remove vertical-align middle in .aui.img causing incorrect alignment. */
+    }
+
+    input[type]:not([type="checkbox"]) {
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        padding: 22px 15px;
+        font-size: 19px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        background-color: #2E42A4;
+        background-image: none;
+        padding: 14px 28px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        border-width: 0;
+        text-shadow: none;
+        @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+
+        &:hover {
+            background-color: #3D55CC;
+            @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+        }
+    }
+
+    /* Navigation Bar
+    ---------------------------------------- */
+    .navigation-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+
+        .site-navigation-bar {
+            height: 72px;
+            padding: 0 64px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+
+            .title-section {
+                float: left;
+            }
+
+            .navigation-section {
+                float: left;
+                height: 72px;
+                overflow: auto;
+                text-align: center;
+                width: 80%;
+
+                nav ul {
+                    display: block;
+                    list-style-type: none;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    li {
+                        display: inline;
+                        margin-left: 20px;
+                    }
+                }
+
+                a {
+                    font-size: 19px;
+                    font-weight: 400;
+                    line-height: 72px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* Portlets
+    ---------------------------------------- */
+    .portlet, .portlet-borderless-container {
+        background-color: #FFF;
+        border-radius: 7px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+        color: #232122;
+        padding: 30px 35px;
+        margin-bottom: 30px;
+
+        .portlet-content {
+            padding: 0;
+        }
+
+        h1.portlet-title {
+            line-height: 0;
+
+            .portlet-title-text {
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    /* Portlet - Login
+    ---------------------------------------- */
+    .portlet-login {
+        input[type]:not([type="checkbox"]) {
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        .navigation {
+            border-width: 0;
+            padding: 0;
+            text-align: center;
+
+            .taglib-text {
+                font-size: 13px;
+                font-weight: 400;
+                opacity: 0.5;
+            }
+
+            .taglib-text:hover {
+                text-decoration: none;
+                opacity: 1;
+            }
+
+            .taglib-icon img {
+                display: none;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 30px;
+}
+
+#wrapper {
+    padding-top: 0;
+}
+
+.page-title-container {
+    margin: 90px 0;
+}
