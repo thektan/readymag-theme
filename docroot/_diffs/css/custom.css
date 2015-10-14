@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
 @import url(color_schemes/night.css);
 @import url(color_schemes/day.css);
+@import url(color_schemes/dawn.css);
 @import "compass";
 
 .aui {
+    /* Global Styles
+    ---------------------------------------- */
     -webkit-font-smoothing: antialiased;
 
     body {
@@ -85,7 +88,7 @@
         .site-navigation-bar {
             height: 72px;
             padding: 0 64px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
             @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
 
             .title-section {
