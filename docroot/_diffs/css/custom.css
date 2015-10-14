@@ -64,6 +64,7 @@
         border-radius: 5px;
         background-color: #2E42A4;
         background-image: none;
+        box-shadow: none;
         padding: 14px 28px;
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
@@ -93,6 +94,7 @@
 
             .title-section {
                 float: left;
+                width: 15%;
             }
 
             .navigation-section {
@@ -100,7 +102,7 @@
                 height: 72px;
                 overflow: auto;
                 text-align: center;
-                width: 80%;
+                width: 70%;
 
                 nav ul {
                     display: block;
@@ -121,7 +123,30 @@
                     text-decoration: none;
                 }
             }
-        }
+
+            .login-section {
+                float: right;
+                text-align: right;
+                width: 15%;
+                height: 72px;
+                display: flex;
+                justify-content: flex-end;
+
+                .btn-login {
+                    @include border-radius(100px);
+                    display: block;
+                    align-self: center;
+                    border-width: 1px;
+                    padding: 0 21px;
+                    line-height: 40px;
+                    font-weight: 400;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0);
+                    }
+                }
+            }
+        } /* End site-navigation-bar */
     }
 
     /* Portlets
