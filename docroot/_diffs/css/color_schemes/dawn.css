@@ -2,9 +2,11 @@ $color-dark: #232122;
 $color-light: #FFF;
 $color-accent: #2E42A4;
 $color-accent-2: #FF4E22;
+$color-background: #ABD3E3;
 
 .scrolled {
     background-color: $color-light !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
 }
 
 .scrolled-text {
@@ -16,18 +18,22 @@ $color-accent-2: #FF4E22;
 }
 
 .aui {
-    background-color: $color-light;
+    background-color: $color-background;
 
     .lfr-admin-panel {
         color: $color-dark;
     }
 
-    body.day {
-        background-color: $color-light;
+    body.dawn {
+        background-color: $color-background;
         color: $color-dark;
 
         a {
             color: $color-dark;
+        }
+
+        h2.page-title {
+            color: $color-light;
         }
 
         /* ------------ Navigation Bar ------------ */

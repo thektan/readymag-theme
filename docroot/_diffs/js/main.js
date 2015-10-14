@@ -6,18 +6,14 @@ AUI().ready(
 	*/
 
 	function() {
-		// console.log(window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('background-color'));
-		// console.log(window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('color'));
-
-		var backgroundColor = window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('background-color');
-		var textColor = window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('color');
-
-		// document.getElementsByClassName("site-navigation-bar")[0].style.background = "rgba(255, 255, 255, 1)";
-		// document.querySelectorAll(".navigation-section nav ul li a").style.color = "rgba(34, 33, 33, 1)";
+		// var backgroundColor = window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('background-color');
+		// var textColor = window.getComputedStyle(document.getElementsByTagName('body')[0], null).getPropertyValue('color');
 
 		var navOffset = $(".navigation-bar").offset().top;
 
-		$(document).scroll(function() {
+		// Changes the navigation bar color when not at top of page.
+		$(document).scroll(function()
+		{
 			if($(this).scrollTop() > navOffset)
 			{
 				$(".site-navigation-bar").addClass("scrolled");
