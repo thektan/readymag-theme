@@ -1,6 +1,7 @@
 $color-dark: #232122;
 $color-light: #FFF;
 $color-accent: #2E42A4;
+$color-accent-bright: #0078FF;
 $color-accent-2: #FF4E22;
 
 /* ------------ Scrolled Styles ------------ */
@@ -29,8 +30,6 @@ $color-accent-2: #FF4E22;
 }
 
 .aui {
-    background-color: $color-dark;
-
     .lfr-admin-panel {
         color: $color-dark;
     }
@@ -38,6 +37,10 @@ $color-accent-2: #FF4E22;
     body.night {
         background-color: $color-dark;
         color: $color-light;
+
+        .container-fluid {
+            background-color: $color-dark;
+        }
 
         a {
             color: $color-dark;
@@ -47,8 +50,12 @@ $color-accent-2: #FF4E22;
         .site-navigation-bar {
             background-color: rgba(34, 33, 33, 0);
 
-            h1.site-title {
+            .title-section {
                 color: $color-light;
+
+                &:hover {
+                    color: $color-accent-bright;
+                }
             }
 
             .navigation-section {
@@ -56,7 +63,7 @@ $color-accent-2: #FF4E22;
                     color: $color-light;
 
                     &:hover {
-                        color: $color-accent;
+                        color: $color-accent-bright;
                     }
                 }
             }

@@ -4,6 +4,10 @@
 @import url(color_schemes/dawn.css);
 @import "compass";
 
+html, body {
+    height: 100%;
+}
+
 .aui {
     /* Global Styles
     ---------------------------------------- */
@@ -17,13 +21,6 @@
 
     h1, h2, h3, h4, h5, h6 {
         font-weight: 300;
-        margin: 0;
-    }
-
-    h1.site-title {
-        font-size: 26px;
-        font-weight: 500;
-        line-height: 72px;
         margin: 0;
     }
 
@@ -92,11 +89,35 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
 
+            /* ----- Title Section ----- */
             .title-section {
                 float: left;
                 width: 15%;
+                display: -webkit-flex;
+                display: flex;
+                justify-content: flex-start;
+                -webkit-justify-content: flex-start;
+
+                .site-logo {
+                    display: block;
+                    float: left;
+                    width: 30px;
+                    align-self: center;
+                    -webkit-align-self: center;
+                }
+
+                .site-name {
+                    align-self: center;
+                    -webkit-align-self: center;
+                    float: left;
+                    font-size: 26px;
+                    font-weight: 500;
+                    line-height: 72px;
+                    margin: 0 0 0 10px;
+                }
             }
 
+            /* ----- Navigation Section ----- */
             .navigation-section {
                 float: left;
                 height: 72px;
@@ -124,6 +145,7 @@
                 }
             }
 
+            /* ----- Login Section ----- */
             .login-section {
                 float: right;
                 text-align: right;
@@ -210,10 +232,6 @@
             }
         }
     }
-}
-
-.logo {
-    width: 30px;
 }
 
 #wrapper {

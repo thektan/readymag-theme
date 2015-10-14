@@ -18,7 +18,6 @@ $color-background: #ABD3E3;
 }
 
 .aui {
-    background-color: $color-background;
 
     .lfr-admin-panel {
         color: $color-dark;

@@ -18,14 +18,14 @@ AUI().ready(
 			{
 				$(".site-navigation-bar").addClass("scrolled");
 				$(".navigation-section a").addClass("scrolled-text");
-				$("h1.site-title").addClass("scrolled-text");
+				$(".title-section").addClass("scrolled-text");
 				$(".site-navigation-bar .btn-login").addClass("scrolled-button");
 			}
 			else
 			{
 				$(".site-navigation-bar").removeClass("scrolled");
 				$(".navigation-section a").removeClass("scrolled-text");
-				$("h1.site-title").removeClass("scrolled-text");
+				$(".title-section").removeClass("scrolled-text");
 				$(".site-navigation-bar .btn-login").removeClass("scrolled-button");
 			}
 		});

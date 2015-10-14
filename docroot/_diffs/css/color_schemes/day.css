@@ -17,7 +17,6 @@ $color-accent-2: #FF4E22;
 }
 
 .aui {
-    background-color: $color-light;
 
     .lfr-admin-panel {
         color: $color-dark;
