@@ -5,11 +5,6 @@ $color-accent-bright: #0078FF;
 $color-accent-2: #FF4E22;
 
 /* ------------ Scrolled Styles ------------ */
-.scrolled {
-    background-color: $color-light !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
-}
-
 .scrolled-text {
     color: $color-dark !important;
 
@@ -79,6 +74,11 @@ $color-accent-2: #FF4E22;
             }
         }
 
+        .site-navigation-bar.scrolled {
+            background-color: $color-light;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
         /* ------------ Portlet - Login ------------*/
         .portlet-login {
             .navigation {
@@ -87,6 +87,22 @@ $color-accent-2: #FF4E22;
                 .taglib-text:hover {
                     color: $color-accent;
                 }
+            }
+        }
+
+        .line {
+            background-color: $color-light;
+        }
+
+        .menu-button.scrolled-menu {
+            .line {
+                background-color: $color-dark;
+            }
+        }
+
+        .menu-button.opened {
+            .line {
+
             }
         }
     }

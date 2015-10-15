@@ -24,6 +24,14 @@ $theme.include($body_top_include)
 	#end
 
 	<div class="site-navigation-bar">
+		<div class="menu-button">
+			<div class="hamburger-icon">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+
 		<a class="$logo_css_class title-section" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
 			<img class="site-logo" alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 			#if ($show_site_name)
@@ -55,29 +63,6 @@ $theme.include($body_top_include)
 </div>
 
 <div class="container-fluid" id="wrapper">
-	<!-- <header id="banner" role="banner">
-		<div id="heading">
-			<h1 class="site-title">
-				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-				</a>
-
-				#if ($show_site_name)
-					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-						$site_name
-					</span>
-				#end
-			</h1>
-
-			#if ($has_navigation || $is_signed_in)
-				#parse ("$full_templates_path/navigation.vm")
-			#end
-
-			#if (!$is_signed_in)
-				<a data-redirect="$is_login_redirect_required" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-			#end
-		</div>
-	</header> -->
 
 	<div class="page-title-container">
 		<h2 class="page-title">$the_title</h2>

@@ -24,12 +24,6 @@ html, body {
         margin: 0;
     }
 
-    h2.page-title {
-        line-height: 60px;
-        font-size: 90px;
-        text-align: center;
-    }
-
     h2.welcome-title {
         font-size: 21px;
         font-weight: 400;
@@ -72,6 +66,18 @@ html, body {
         &:hover {
             background-color: #3D55CC;
             @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+        }
+    }
+
+    /* Page Header
+    ---------------------------------------- */
+    .page-title-container {
+        margin: 90px 0;
+
+        .page-title {
+            line-height: 60px;
+            font-size: 90px;
+            text-align: center;
         }
     }
 
@@ -232,12 +238,108 @@ html, body {
             }
         }
     }
+
+    @media (max-width: 979px) {
+        #navigation {
+            display: block; // Override navigation display none
+        }
+    }
+
+    @media (max-width: 800px) {
+        body {
+            padding: 50px 0 0 0;
+        }
+
+        .site-navigation-bar {
+            height: 50px !important;
+
+            .title-section {
+                width: 100% !important;
+                justify-content: center !important;
+                -webkit-justify-content: center !important;
+
+                .site-name {
+                    line-height: 50px !important;
+                }
+            }
+
+            .navigation-section,
+            .login-section {
+                display: none !important;
+            }
+        }
+
+        .page-title-container {
+            margin: 35px 0;
+
+            .page-title {
+                font-size: 41px !important;
+            }
+        }
+    }
 }
 
 #wrapper {
     padding-top: 0;
 }
 
-.page-title-container {
-    margin: 90px 0;
+
+.menu-button {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        width: 24px;
+        height: 16px;
+        position: absolute;
+        top: 17px;
+        left: 16px;
+        z-index: 99999;
+
+        .line {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            margin-bottom: 5px;
+            @include border-radius(2px);
+            @include transition(all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1));
+
+            &:nth-child(1) {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 7px;
+            }
+
+            &:nth-child(3) {
+                top: 14px;
+            }
+        }
+    }
+}
+
+.menu-button.opened {
+    .line {
+        &:nth-child(1) {
+            @include rotate(45deg);
+            top: 7px;
+        }
+
+        &:nth-child(2) {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        &:nth-child(3) {
+            @include rotate(-45deg);
+            top: 7px;
+        }
+    }
 }

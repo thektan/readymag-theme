@@ -20,6 +20,7 @@ AUI().ready(
 				$(".navigation-section a").addClass("scrolled-text");
 				$(".title-section").addClass("scrolled-text");
 				$(".site-navigation-bar .btn-login").addClass("scrolled-button");
+				$(".menu-button").addClass("scrolled-menu");
 			}
 			else
 			{
@@ -27,7 +28,13 @@ AUI().ready(
 				$(".navigation-section a").removeClass("scrolled-text");
 				$(".title-section").removeClass("scrolled-text");
 				$(".site-navigation-bar .btn-login").removeClass("scrolled-button");
+				$(".menu-button").removeClass("scrolled-menu");
 			}
+		});
+
+		$(".menu-button").click(function()
+		{
+			$(this).toggleClass("opened");
 		});
 
 
